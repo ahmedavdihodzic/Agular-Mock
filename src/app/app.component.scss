@@ -1,0 +1,28 @@
+
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.app-container{
+ display: grid;
+ grid-template-columns:240px 1fr;
+ grid-template-rows:0.5fr 10fr;
+ grid-template-areas:
+  "navb navb"
+  "sidebar main"
+;
+
+}
+.navb{
+    grid-area:navb;
+}
+.sidebar{
+    grid-area:sidebar;
+}
+.main{
+    grid-area:main;
+}

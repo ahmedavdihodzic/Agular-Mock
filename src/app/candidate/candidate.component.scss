@@ -1,0 +1,38 @@
+.candidate-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 10px 10px 0 10px;
+    background-color:#8a95a3;
+}
+
+.candidate-container{
+    padding: 30px;
+    margin: 0 10px ;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    color:blue;
+    font-family: monospace;
+}
+.candidate img{
+    border-radius: 100%;
+}
+.workroom-btn{
+    padding:5px;
+    height: 0px;
+    width: 70px;
+    text-decoration: none;
+    background-color:#4ba4da;
+    color: white;
+    border-radius: 3px;
+}
+.millestone{
+    display: flex;
+    flex-direction: column;
+}
+.contract-type, .amount, .age-paid {
+  color:black;
+}

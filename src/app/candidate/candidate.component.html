@@ -1,0 +1,38 @@
+<div class="candidate-header">
+    <h4>Opportunity</h4>
+    <h4>Candidate</h4>
+    <h4>Workroom Link</h4>
+    <h4>Contract Type</h4>
+    <h4>Millestone</h4>
+    <h4>Amount</h4>
+    <h4>Age Paid</h4>
+</div>
+<div class="candidate-container" *ngFor="let candidate of candidates ">
+
+    <div class="opportunity">
+     {{candidate.opportunity}}
+    </div>
+    <div class="candidate">
+        <img src={{candidate.photo}} alt="candidate" height="70px">
+    </div>
+    <div class="workroom-link">
+    
+     <a href={{candidate.link}} type="button" class="workroom-btn">Workroom</a>
+
+    </div>
+    <div class="contract-type">
+     {{candidate.type}}
+    </div>
+    <div class="millestone" >
+        <div class="milleston-loop" *ngFor="let milestone of candidate.milestone; let i = index">
+        <span style="color:black;">{{i+1}}.</span> {{milestone}}
+        </div>
+    </div>
+    <div class="amount">
+      {{candidate.amount}}
+    </div>
+    <div class="age-paid">
+     {{candidate.agepaid}}
+    </div>
+    
+</div>
